@@ -1,1 +1,1 @@
-# ruby_basic_projcects
+# ruby_basic_projects
