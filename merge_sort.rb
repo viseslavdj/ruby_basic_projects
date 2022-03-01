@@ -27,15 +27,14 @@ end
 /
 def merge (left, right)
   sorted = []
-  while left.any? && right.any?
+  while left.size != 0 && right.size != 0
     if (left.first < right.first)
-      sorted.push(left.shift)
+      sorted << left.shift
     else
-      sorted.push(right.shift)
+      sorted << right.shift
     end
   end
-  sorted += left
-  sorted += right
+  sorted += left + right
 end
 
 v = [23,23,2,32, 412,21,260,84, 0, -4]
